@@ -1,12 +1,12 @@
 package net.donutcraft.mod;
 
+/**
+ * Created by TheTrade12 on 06/06/2015.
+ */
 
 import net.donutcraft.mod.food.FoodRawBacon;
 import net.donutcraft.mod.handlers.LogHelper;
-import net.donutcraft.mod.init.DonutCraftBlocks;
-import net.donutcraft.mod.init.DonutCraftFood;
-import net.donutcraft.mod.init.DonutCraftItems;
-import net.donutcraft.mod.init.DonutCraftRecipes;
+import net.donutcraft.mod.init.*;
 import net.donutcraft.mod.worldgen.DonutCraftWorldGen;
 import net.minecraft.creativetab.CreativeTabs;
 import cpw.mods.fml.common.Mod;
@@ -48,6 +48,7 @@ public class DonutCraft {
 		DonutCraftItems.register();
 		DonutCraftBlocks.register();
 		DonutCraftFood.register();
+        EventHelper.init();
 
 
 	}
