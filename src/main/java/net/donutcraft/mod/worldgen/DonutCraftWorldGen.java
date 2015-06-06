@@ -38,8 +38,8 @@ public class DonutCraftWorldGen implements IWorldGenerator {
 
 	private void generateSurface(World world, Random random, int x, int z) {
 		//this.addOreSpawn(DonutCraft.orewhatever, world, random, x=blockXPos, z= blockZPos, maxX, maxZ, MaxVeinSize. chancetospawn, min Y, maxY
-		this.addOreSpawn(DonutCraftBlocks.oreDonutOre, world, random, x, z, 16, 16, 4+random.nextInt(6), 3, 5, 24);
-		this.addOreSpawn(DonutCraftBlocks.oreSprinkleOre, world, random, x, z, 16, 16, 4+random.nextInt(6), 2, 38, 72);
+		this.addOreSpawn(DonutCraftBlocks.DonutOre, world, random, x, z, 16, 16, 4+random.nextInt(6), 3, 5, 24);
+		this.addOreSpawn(DonutCraftBlocks.SprinkleOre, world, random, x, z, 16, 16, 4+random.nextInt(6), 2, 38, 72);
 	}
 
 	private void addOreSpawn(Block oreDonutOre, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int  maxVeinSize, int chanceToSpawn, int minY, int maxY) {

@@ -2,6 +2,7 @@ package net.donutcraft.mod;
 
 
 import net.donutcraft.mod.food.FoodRawBacon;
+import net.donutcraft.mod.handlers.LogHelper;
 import net.donutcraft.mod.init.DonutCraftBlocks;
 import net.donutcraft.mod.init.DonutCraftFood;
 import net.donutcraft.mod.init.DonutCraftItems;
@@ -36,7 +37,8 @@ public class DonutCraft {
 
 
 	@EventHandler
-	public void PreIit(FMLPreInitializationEvent preEvent){
+	public void PreInit(FMLPreInitializationEvent preEvent){
+		LogHelper.info("Pre-Initialization");
 
 
 		GameRegistry.registerWorldGenerator(eventWorldGen, 0);
@@ -46,16 +48,21 @@ public class DonutCraft {
 		DonutCraftItems.register();
 		DonutCraftBlocks.register();
 		DonutCraftFood.register();
-	
+
+
 	}
 	
 	@EventHandler
 	public void Init(FMLInitializationEvent event){
+		LogHelper.info("Initialization");
+
 		DonutCraftRecipes.addRecipes();
+
 	}
 	
 	@EventHandler
 	public void PostInit(FMLPostInitializationEvent postEvent){
+		LogHelper.info("Post-Initialization");
 		
 	}
 	

@@ -55,9 +55,7 @@ public class DonutCraftRecipes {
         GameRegistry.addShapedRecipe(new ItemStack (DonutCraftItems.itemSprinkleIngot), "ZZZ", "ZZZ", "ZZZ", 'Z', DonutCraftFood.foodDonutSprinkles);
 
         //Smelting
-        GameRegistry.addSmelting(DonutCraftBlocks.oreDonutOre, new ItemStack(DonutCraftItems.itemDonutGem), 15);
         GameRegistry.addSmelting(DonutCraftFood.foodDonutRawBacon, new ItemStack(DonutCraftFood.foodDonutCookedBacon), 23);
-        GameRegistry.addSmelting(DonutCraftBlocks.oreSprinkleOre , new ItemStack (DonutCraftItems.itemSprinkleIngot), 25);
         GameRegistry.addSmelting(DonutCraftItems.itemDonutGemDust , new ItemStack (DonutCraftItems.itemDonutGem), 25);
 
     }

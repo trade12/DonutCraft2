@@ -17,11 +17,11 @@ public class DonutCraftItems {
     public static Item itemBaconHoe;
     public static Item itemDonutGemPick;
     public static Item itemDonutGemSword;
-    public static Item.ToolMaterial BaconMaterial = EnumHelper.addToolMaterial("BaconMaterial", 2, 575, 6.5F, 2.8F, 14);
-    public static Item.ToolMaterial DonutMaterial = EnumHelper.addToolMaterial("DonutMaterial", 4, 2250, 8.3F, 3.2F, 10);
+    public static Item.ToolMaterial BaconMaterial = EnumHelper.addToolMaterial("BaconMaterial", 3, 1550, 6.5F, 3.0F, 14);
+    public static Item.ToolMaterial DonutMaterial = EnumHelper.addToolMaterial("DonutMaterial", 4, 2620, 9.0F, 4.0F, 15);
 
 
-    public static Item.ToolMaterial DonutGemMaterial = EnumHelper.addToolMaterial("DonutGemMaterial", 6, 3758, 10.8F, 5.2F, 5);
+    public static Item.ToolMaterial DonutGemMaterial = EnumHelper.addToolMaterial("DonutGemMaterial", 5, 3620, 12.0F, 6.0F, 25);
 
     public static Item itemDonutSword;
     public static Item itemDonutPick;
@@ -29,8 +29,8 @@ public class DonutCraftItems {
     public static Item itemDonutAxe;
     public static Item itemDonutHoe;
 
-    public static ItemArmor.ArmorMaterial BaconArmourMaterial = EnumHelper.addArmorMaterial("BaconArmour", 45, new int[]{3, 7, 10, 5}, 25);
-    public static ItemArmor.ArmorMaterial DonutArmourMaterial = EnumHelper.addArmorMaterial("DonutArmour", 45, new int[]{4, 9, 15, 6}, 10);
+    public static ItemArmor.ArmorMaterial BaconArmourMaterial = EnumHelper.addArmorMaterial("BaconArmour", 45, new int[]{6, 12, 10, 4}, 10);
+    public static ItemArmor.ArmorMaterial DonutArmourMaterial = EnumHelper.addArmorMaterial("DonutArmour", 45, new int[]{8, 18, 25, 8}, 12);
 
     public static int armorBaconHelmID;
     public static int armorBaconChestID;
