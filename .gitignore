@@ -1,8 +1,9 @@
 ## gradle
 /.gradle
 /build
+/0.2
 /gradle
-/.grade/0.2
+
 
 ## Other
 /dep
