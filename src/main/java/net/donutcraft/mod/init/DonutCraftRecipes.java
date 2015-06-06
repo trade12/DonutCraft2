@@ -20,8 +20,6 @@ public class DonutCraftRecipes {
         GameRegistry.addShapedRecipe(new ItemStack (DonutCraftFood.foodDonutSprinkleDonut), "   ", " S ", " D ", 'S', DonutCraftFood.foodDonutSprinkles, 'D', DonutCraftFood.foodDonutPlainDonut);
         GameRegistry.addShapedRecipe(new ItemStack (DonutCraftFood.foodDonutCocoSDonut), "   ", " S ", " D ", 'S', DonutCraftFood.foodDonutSprinkles, 'D', DonutCraftFood.foodDonutCocoDonut);
 
-        GameRegistry.addShapedRecipe(new ItemStack (DonutCraftFood.foodDonutRawBacon, 16), "PPP", "PPP", "PPP", 'P', Items.porkchop);
-
         GameRegistry.addShapedRecipe(new ItemStack (DonutCraftItems.DonutHelm), "XXX", "X X", 'X', DonutCraftItems.itemDonutGem);
         GameRegistry.addShapedRecipe(new ItemStack (DonutCraftItems.DonutChest), "X X", "XXX", "XXX", 'X', DonutCraftItems.itemDonutGem);
         GameRegistry.addShapedRecipe(new ItemStack (DonutCraftItems.DonutLegs), "XXX", "X X", "X X", 'X', DonutCraftItems.itemDonutGem);
