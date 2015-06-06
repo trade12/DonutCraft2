@@ -1,0 +1,16 @@
+[
+{
+  "modid": "DonutCraft",
+  "name": "DonutCraft 2",
+  "description": "This mod adds food, tools and armor that is all about donuts",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["DoughnutDev"],
+  "credits": "KillerWolfe for the texture and Woter for the help and motivation",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
