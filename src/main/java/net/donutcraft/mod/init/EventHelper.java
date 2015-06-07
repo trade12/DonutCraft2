@@ -10,6 +10,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 
+import java.util.Random;
+
 /**
  * Created by TheTrade12 on 06/06/2015.
  */
@@ -24,10 +26,12 @@ public class EventHelper {
     public void onDeathEvent(LivingDeathEvent event) {
         if (event.entity instanceof EntityPig) {
             if (!event.entity.worldObj.isRemote) {
+                if((new Random()).nextDouble() < 0.2) {
                 EntityItem ei = new EntityItem(event.entityLiving.worldObj);
                 ei.setEntityItemStack(new ItemStack(DonutCraftFood.foodDonutRawBacon, 1));
                 ei.setPosition(event.entityLiving.posX, event.entityLiving.posY, event.entityLiving.posZ);
                 event.entityLiving.worldObj.spawnEntityInWorld(ei);
+                }
             }
         }
     }
