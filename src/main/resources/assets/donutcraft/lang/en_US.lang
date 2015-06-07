@@ -1,15 +1,14 @@
-tile.DonutOre.name=Donut Ore
+
+##ITEMS##
 item.DonutGem.name=Donut Gem
 item.PlainDough.name=Plain Dough
 item.CocoDough.name=Coco Dough
-itemGroup.DonutCraft=DonutCraft
 item.GodDonut.name=God Donut
-item.GodDonut.name.tooltip=The Donut Gods are Unleased!
 item.RawBacon.name=Raw Bacon
 item.CookedBacon.name=Cooked Bacon
 item.CocoDonut.name=Coco Donut
 item.PlainDonut.name=Plain Donut
-item.Sprinkles.name=Sprinkles
+
 item.BaconSword.name=Bacon Sword
 item.BaconHoe.name=Bacon Hoe
 item.BaconSpade.name=Bacon Shovel
@@ -19,7 +18,7 @@ item.BaconHelm.name=Bacon Helmet
 item.BaconChest.name=Bacon Chestplate
 item.BaconLegs.name=Bacon Leggings
 item.BaconBoots.name=Bacon Boots
-tile.SprinkleOre.name=Sprinkle Ore
+
 item.DonutHelm.name=Donut Helmet
 item.DonutChest.name=Donut Chestplate
 item.DonutLegs.name=Donut Leggings
@@ -29,14 +28,27 @@ item.DonutPick.name=Donut Pickaxe
 item.DonutHoe.name=Donut Hoe
 item.DonutAxe.name=Donut Axe
 item.DonutSpade.name=Donut Shovel
+
+item.Sprinkles.name=Sprinkles
 item.SprinkleDonut.name=Sprinkle Donut
+item.SprinkleIngot.name=Sprinkle Ingot
 item.CocoS.name=Coco Sprinkled Donut
-tile.DonutBlock.name=Donut Gem Block
+
 item.DonutGemSword.name=Donut Gem Sword
 item.DonutGemPick.name=Donut Gem Pickaxe
 item.DonutGemHoe.name=Donut Gem Hoe
 item.DonutGemAxe.name=Donut Gem Axe
 item.DonutGemSpade.name=Donut Gem Shovel
 item.DonutGemDust.name=Donut Dust
+
+##BLOCKS##
+tile.DonutOre.name=Donut Ore
+tile.SprinkleOre.name=Sprinkle Ore
+tile.DonutBlock.name=Donut Gem Block
 tile.SprinkleBlock.name= Block of Sprinkles
+
+
+##MISC##
 itemGroup.donutcraftTab=DonutCraft
+itemGroup.DonutCraft=DonutCraft
+item.GodDonut.name.tooltip=The Donut Gods are Unleased!
