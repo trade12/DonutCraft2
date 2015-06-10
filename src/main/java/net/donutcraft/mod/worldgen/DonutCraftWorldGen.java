@@ -39,7 +39,6 @@ public class DonutCraftWorldGen implements IWorldGenerator {
 	private void generateSurface(World world, Random random, int x, int z) {
 		//this.addOreSpawn(DonutCraft.orewhatever, world, random, x=blockXPos, z= blockZPos, maxX, maxZ, MaxVeinSize. chancetospawn, min Y, maxY
 		this.addOreSpawn(DonutCraftBlocks.DonutOre, world, random, x, z, 16, 16, 4+random.nextInt(6), 3, 5, 24);
-		this.addOreSpawn(DonutCraftBlocks.SprinkleOre, world, random, x, z, 16, 16, 4+random.nextInt(6), 2, 38, 72);
 	}
 
 	private void addOreSpawn(Block oreDonutOre, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int  maxVeinSize, int chanceToSpawn, int minY, int maxY) {
@@ -48,15 +47,6 @@ public class DonutCraftWorldGen implements IWorldGenerator {
 			int posY = minY + random.nextInt(maxY - minY);
 			int posZ = blockZPos + random.nextInt(maxZ);
 			(new WorldGenMinable(oreDonutOre, maxVeinSize)).generate(world, random, posX, posY, posZ);
-		}
-	}
-			
-			private void addOreSpawn1(Block oreSprinkleOre, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int  maxVeinSize, int chanceToSpawn, int minY, int maxY) {
-				for(int i = 0; i < chanceToSpawn; i++ ) {
-					int posX = blockXPos + random.nextInt(maxX);
-					int posY = minY + random.nextInt(maxY - minY);
-					int posZ = blockZPos + random.nextInt(maxZ);
-					(new WorldGenMinable(oreSprinkleOre, maxVeinSize)).generate(world, random, posX, posY, posZ);
 		}
 	}
 }

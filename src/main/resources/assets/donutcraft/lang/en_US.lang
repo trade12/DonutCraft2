@@ -41,6 +41,13 @@ item.DonutGemAxe.name=Donut Gem Axe
 item.DonutGemSpade.name=Donut Gem Shovel
 item.DonutGemDust.name=Donut Dust
 
+item.ColdCoffee.name=Cold Coffee - WIP
+item.WarmCoffee.name=Warm Coffee - WIP
+item.MTNDew.name=MTN Dew
+
+item.DonutHammer.name=Hammer of the Donut
+
+
 ##BLOCKS##
 tile.DonutOre.name=Donut Ore
 tile.SprinkleOre.name=Sprinkle Ore

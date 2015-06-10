@@ -14,16 +14,12 @@ public class DonutCraftBlocks {
     public static Block blockSprinkleBlock;
 
     public static void init(){
-        blockSprinkleBlock = new SprinkleBlock(Material.iron).setBlockName("SprinkleBlock").setCreativeTab(DonutCraft.DonutTab).setBlockTextureName(DonutCraft.modid + ":SprinkleBlock");
         blockDonutBlock = new DonutBlock(Material.iron).setBlockName("DonutBlock").setCreativeTab(DonutCraft.DonutTab).setBlockTextureName(DonutCraft.modid + ":DonutBlock");
         DonutOre = new DonutOre(Material.iron).setCreativeTab(DonutCraft.DonutTab).setBlockName("DonutOre");
-        SprinkleOre = new SprinkleOre(Material.iron).setCreativeTab(DonutCraft.DonutTab).setBlockName("SprinkleOre");
     }
 
     public static void register(){
-        GameRegistry.registerBlock(blockSprinkleBlock, "SprinkleBlock");
         GameRegistry.registerBlock(blockDonutBlock, "DonutBlock");
-        GameRegistry.registerBlock(SprinkleOre, "SprinkleOre");
         GameRegistry.registerBlock(DonutOre, "DonutOre");
 
     }

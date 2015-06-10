@@ -4,12 +4,15 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-
+import net.minecraftforge.oredict.OreDictionary;
 
 
 public class DonutCraftRecipes {
 
-    public static void DonutCraftRecipes()
+    public static void init() {
+        initModRecipes();
+    }
+    private static void initModRecipes()
     {
         //Recipes
         GameRegistry.addRecipe(new ItemStack(DonutCraftFood.foodDonutGodDonut), "GGG", "GPG", "GGG", 'G', DonutCraftItems.itemDonutGem, 'P', DonutCraftFood.foodDonutPlainDonut);
@@ -42,22 +45,22 @@ public class DonutCraftRecipes {
         GameRegistry.addShapedRecipe(new ItemStack (DonutCraftItems.itemDonutSpade), " Z ", " A ", " A ", 'Z', DonutCraftFood.foodDonutPlainDonut, 'A', Items.stick);
         GameRegistry.addShapedRecipe(new ItemStack (DonutCraftItems.itemDonutHoe), "ZZ ", " A ", " A ", 'Z', DonutCraftFood.foodDonutPlainDonut, 'A', Items.stick);
 
+        GameRegistry.addShapedRecipe(new ItemStack (DonutCraftItems.DonutHammer), "ZZZ", "ZZZ", " A ", 'Z', DonutCraftItems.itemDonutGem, 'A', Items.stick);
+
         GameRegistry.addShapedRecipe(new ItemStack (DonutCraftItems.itemDonutGemSword), " Z ", " Z ", " A ", 'Z', DonutCraftItems.itemDonutGem, 'A', Items.stick);
         GameRegistry.addShapedRecipe(new ItemStack (DonutCraftItems.itemDonutGemPick), "ZZZ", " A ", " A ", 'Z', DonutCraftItems.itemDonutGem, 'A', Items.stick);
 
-        GameRegistry.addShapedRecipe(new ItemStack (DonutCraftBlocks.blockSprinkleBlock), "ZZZ", "ZZZ", "ZZZ", 'Z', DonutCraftItems.itemSprinkleIngot);
         GameRegistry.addShapedRecipe(new ItemStack (DonutCraftBlocks.blockDonutBlock), "ZZZ", "ZZZ", "ZZZ", 'Z', DonutCraftItems.itemDonutGem);
+        GameRegistry.addShapelessRecipe(new ItemStack(DonutCraftItems.itemDonutGem, 9), DonutCraftBlocks.blockDonutBlock);
 
-        GameRegistry.addShapedRecipe(new ItemStack (DonutCraftFood.foodDonutSprinkles), "   ", " Z ", "   ", 'Z', DonutCraftItems.itemSprinkleIngot);
+        GameRegistry.addShapedRecipe(new ItemStack (DonutCraftFood.foodSprinkles, 4), "SSS", "SSS", "SSS", 'S', Items.sugar);
 
-        GameRegistry.addShapedRecipe(new ItemStack (DonutCraftItems.itemSprinkleIngot), "ZZZ", "ZZZ", "ZZZ", 'Z', DonutCraftFood.foodDonutSprinkles);
-
+        GameRegistry.addShapelessRecipe(new ItemStack(DonutCraftItems.itemDonutGemDust, 2), new Object[]{new ItemStack(DonutCraftBlocks.DonutOre), new ItemStack(DonutCraftItems.DonutHammer, 1, OreDictionary.WILDCARD_VALUE)});
         //Smelting
         GameRegistry.addSmelting(DonutCraftFood.foodDonutRawBacon, new ItemStack(DonutCraftFood.foodDonutCookedBacon), 23);
         GameRegistry.addSmelting(DonutCraftItems.itemDonutGemDust , new ItemStack (DonutCraftItems.itemDonutGem), 25);
+        GameRegistry.addSmelting(DonutCraftBlocks.DonutOre, new ItemStack (DonutCraftItems.itemDonutGem), 25);
 
     }
 
-    public static void addRecipes() {
-    }
 }

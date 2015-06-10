@@ -51,8 +51,8 @@ public class DonutCraftItems {
     public static Item DonutBoots;
 
     public static Item itemDonutGem;
-    public static Item itemSprinkleIngot;
     public static Item itemDonutGemDust;
+    public static Item DonutHammer;
 
     public static void init(){
         // Tools
@@ -68,11 +68,9 @@ public class DonutCraftItems {
         itemDonutHoe = new DonutHoe(DonutMaterial).setCreativeTab(DonutCraft.DonutTab).setUnlocalizedName("DonutHoe").setTextureName(DonutCraft.modid + ":DonutHoe");
         itemDonutGemSword = new DonutGemSword(DonutGemMaterial).setCreativeTab(DonutCraft.DonutTab).setUnlocalizedName("DonutGemSword").setTextureName(DonutCraft.modid + ":DonutGemSword");
         itemDonutGemPick = new DonutGemPick(DonutGemMaterial).setCreativeTab(DonutCraft.DonutTab).setUnlocalizedName("DonutGemPick").setTextureName(DonutCraft.modid + ":DonutGemPick");
-
+        DonutHammer = new DonutHammer().setCreativeTab(DonutCraft.DonutTab).setUnlocalizedName("DonutHammer").setTextureName(DonutCraft.modid + ":DonutHammer");
 
         //Ingots
-
-        itemSprinkleIngot = new NCItems().setCreativeTab(DonutCraft.DonutTab).setUnlocalizedName("SprinkleIngot").setTextureName(DonutCraft.modid + ":SprinkleIngot");
 
         itemDonutGem = new NCItems().setCreativeTab(DonutCraft.DonutTab).setUnlocalizedName("DonutGem");
 
@@ -106,7 +104,6 @@ public class DonutCraftItems {
         GameRegistry.registerItem(itemDonutHoe, "DonutHoe");
         GameRegistry.registerItem(itemDonutGemSword, "DonutGemSword");
         GameRegistry.registerItem(itemDonutGemPick, "DonutGemPick");
-        GameRegistry.registerItem(itemSprinkleIngot, "SprinkleIngot");
         GameRegistry.registerItem(BaconHelm, "BaconHelm");
         GameRegistry.registerItem(BaconChest, "BaconChest");
         GameRegistry.registerItem(BaconLegs, "BaconLeg");
@@ -117,6 +114,7 @@ public class DonutCraftItems {
         GameRegistry.registerItem(DonutBoots, "DonutBoots");
         GameRegistry.registerItem(itemDonutGem, "DonutGem");
         GameRegistry.registerItem(itemDonutGemDust, "DonutGemDust");
+        GameRegistry.registerItem(DonutHammer, "DonutHammer");
     }
 
 }

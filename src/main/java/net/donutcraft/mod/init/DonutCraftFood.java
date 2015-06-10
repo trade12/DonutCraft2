@@ -18,6 +18,12 @@ public class DonutCraftFood {
     public static Item foodDonutSprinkles;
     public static Item foodDonutSprinkleDonut;
     public static Item foodDonutCocoSDonut;
+    public static Item foodSprinkles;
+
+    public static Item foodColdCoffee;
+    public static Item foodWarmCoffee;
+
+    public static Item foodMTNDew;
 
     public static void init(){
         //Materials
@@ -42,6 +48,12 @@ public class DonutCraftFood {
         foodDonutSprinkleDonut = new foodDonutSprinkleDonut(5, 0.9F, true).setCreativeTab(DonutCraft.DonutTab).setUnlocalizedName("SprinkleDonut").setTextureName(DonutCraft.modid + ":SprinkleDonut");
 
         foodDonutCocoSDonut = new foodCocoSDonut(5, 0.9F, true).setCreativeTab(DonutCraft.DonutTab).setUnlocalizedName("CocoS").setTextureName(DonutCraft.modid + ":CocoS");
+
+        foodColdCoffee = new foodColdCoffee(2, 1.0F, true).setCreativeTab(DonutCraft.DonutTab).setUnlocalizedName("ColdCoffee").setTextureName(DonutCraft.modid + ":ColdCoffee");
+
+        foodWarmCoffee = new foodWarmCoffee(4, 1.0F, true).setCreativeTab(DonutCraft.DonutTab).setUnlocalizedName("WarmCoffee").setTextureName(DonutCraft.modid + ":WarmCoffee");
+
+        foodMTNDew = new foodWarmCoffee(3, 1.0F, true).setCreativeTab(DonutCraft.DonutTab).setUnlocalizedName("MTNDew").setTextureName(DonutCraft.modid + ":MTNDEW");
     }
     public static void register() {
         GameRegistry.registerItem(foodDonutGodDonut, "GodDonut");
@@ -54,5 +66,9 @@ public class DonutCraftFood {
         GameRegistry.registerItem(foodDonutCookedBacon, "CookedBacon");
         GameRegistry.registerItem(itemDonutCocoDough, "CocoDough");
         GameRegistry.registerItem(itemDonutPlainDough, "PlainDough");
+        GameRegistry.registerItem(foodColdCoffee, "ColdCoffee");
+        GameRegistry.registerItem(foodWarmCoffee, "WarmCoffee");
+        GameRegistry.registerItem(foodMTNDew, "MTNDew");
+
     }
 }

@@ -1,10 +1,8 @@
 package net.donutcraft.mod;
 
-/**
- * Created by TheTrade12 on 06/06/2015.
- */
-
+import cpw.mods.fml.common.FMLCommonHandler;
 import net.donutcraft.mod.food.FoodRawBacon;
+import net.donutcraft.mod.handlers.CraftingHandler;
 import net.donutcraft.mod.handlers.LogHelper;
 import net.donutcraft.mod.init.*;
 import net.donutcraft.mod.worldgen.DonutCraftWorldGen;
@@ -50,14 +48,15 @@ public class DonutCraft {
 		DonutCraftFood.register();
         EventHelper.init();
 
-
 	}
 	
 	@EventHandler
 	public void Init(FMLInitializationEvent event){
+		FMLCommonHandler.instance().bus().register(new CraftingHandler());
+
 		LogHelper.info("Initialization");
 
-		DonutCraftRecipes.addRecipes();
+		DonutCraftRecipes.init();
 
 	}
 	
