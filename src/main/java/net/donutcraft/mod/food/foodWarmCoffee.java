@@ -46,4 +46,15 @@ public class foodWarmCoffee extends ItemFood{
         p_77659_3_.setItemInUse(p_77659_1_, this.getMaxItemUseDuration(p_77659_1_));
         return p_77659_1_;
     }
+
+    protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer player)
+    {
+        if (!world.isRemote)
+        {
+            player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id,200, 4));
+            player.addPotionEffect(new PotionEffect(Potion.jump.id, 200, 4));
+        }
+    }
+
+
 }
